@@ -1,0 +1,84 @@
+@keyframes slideShow {
+    0% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716835821/fond_1_iykrnd.jpg');
+    }
+    33.33% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716835819/fond_3_regw7y.jpg');
+    }
+    33.34% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716835818/fond_2_bois_omxckp.webp');
+    }
+    66.66% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716840410/North-African-Mergoums-displayed-in-a-shop-in-southern-Tunisia_yiupqt.webp');
+    }
+    66.67% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716840410/berber-oiental-traditional-north-african-moroccan-style-outdoor-rugs_teomv8.webp');
+    }
+    100% {
+      background-image: url('https://res.cloudinary.com/habibii/image/upload/v1716835819/fond_1_bois_fexmsf.jpg');
+    }
+  }
+
+body {
+    height: 100rem;
+    animation: slideShow 70s infinite; /* 30 seconds for 3 images, adjust as needed */
+    background-size: contain;
+    transition: background-image 1s ease-in-out;
+
+    border: 2px solid darkgray;
+    color: #000; text-shadow: 1px 1px 0 #fff;
+  }
+  
+  main {
+    min-height: 80vh;
+  }
+  
+  h3 {
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+  }
+  
+  .rating span {
+    margin: 0.1rem;
+  }
+  
+  /* carousel */
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    display: flex;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+  }
+  
+  .carousel-caption h2 {
+    color: #fff;
+  }
+  
+  .carousel img {
+    height: 300px;
+    padding: 30px;
+    margin: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel a {
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+    .carousel-caption h2 {
+      font-size: 2.5vw;
+    }
+  }
